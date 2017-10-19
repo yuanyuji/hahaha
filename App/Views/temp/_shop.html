@@ -1,0 +1,31 @@
+<div class="wrap">
+    <header class="header bd1">
+        <h1>购物车</h1>
+    </header>
+    <section class="section">
+        <dl class="bdb1" ng-repeat="shop in shops">
+            <dt class="col-xs-10">
+            <p class="check col-xs-2">
+                <em ng-class="{active:shop.bool}" ng-click="color($index)"></em>
+            </p>
+            <span class="img col-xs-3"><img ng-src="{{shop.img}}" alt=""></span>
+            <p class="price col-xs-3">价格：{{shop.price}}</p>
+            <p class="inp col-xs-4">
+                <span ng-click="count($index,'-')">-</span>
+                <input type="text" value="{{shop.num}}">
+                <span ng-click="count($index,'+')">+</span>
+            </p>
+            </dt>
+            <dd class="col-xs-2 mt10">
+                <button ng-click="del()">删除</button>
+            </dd>
+        </dl>
+
+    </section>
+    <!--{true: 'active', false: 'inactive'}[flag]-->
+    <footer class="footer bdt1">
+        <p class="check col-xs-4 text-center"><em ng-class="{active:flag}" ng-click="all($index)"></em> 全选</p>
+        <p class="nums col-xs-4 text-center">数量：{{goodsCount}}</p>
+        <p class="zmoney col-xs-4 text-center">总价:￥{{goodsPrice}}</p>
+    </footer>
+</div>

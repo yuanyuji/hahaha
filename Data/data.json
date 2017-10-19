@@ -1,0 +1,23 @@
+[
+  {
+    "id":1,
+    "img":"Content/img/img_01.jpg",
+    "flag":false,
+    "price":542,
+    "num":1
+  },
+  {
+    "id":2,
+    "img":"Content/img/img_02.jpg",
+    "flag":true,
+    "price":241,
+    "num":1
+  },
+  {
+    "id":3,
+    "img":"Content/img/img_03.jpg",
+    "flag":true,
+    "price":653,
+    "num":1
+  }
+]

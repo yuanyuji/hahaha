@@ -1,0 +1,69 @@
+body, .one, .wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.12rem; }
+
+.header h1 {
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.16rem; }
+
+.section {
+  flex: 1;
+  overflow-y: scroll; }
+  .section dl {
+    display: flex;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    position: relative; }
+    .section dl dt {
+      display: flex; }
+      .section dl dt p {
+        margin-top: 0.1rem; }
+      .section dl dt .check {
+        width: 0.83rem;
+        text-align: center; }
+        .section dl dt .check em {
+          display: inline-block;
+          width: 0.2rem;
+          height: 0.2rem;
+          border: 1px solid #ccc;
+          border-radius: 100%; }
+      .section dl dt .img {
+        width: 1rem; }
+        .section dl dt .img img {
+          width: 100%;
+          height: 100%; }
+      .section dl dt .inp {
+        text-align: center; }
+        .section dl dt .inp input {
+          width: 80%;
+          border: none;
+          border: 1px solid #ccc; }
+        .section dl dt .inp span {
+          font-size: 0.16rem;
+          cursor: pointer; }
+
+.active {
+  background-color: #f0f; }
+
+.inactive {
+  background-color: #fff; }
+
+.footer {
+  height: 0.5rem;
+  display: flex; }
+  .footer p {
+    margin-top: 0.1rem; }
+  .footer .check em {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 100%; }
+
+/*# sourceMappingURL=style.css.map */
